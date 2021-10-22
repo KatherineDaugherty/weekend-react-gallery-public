@@ -3,3 +3,9 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+img.resize {
+height: auto;
+width: auto;
+max-width: 100px;
+max-height: 100px;
+}
