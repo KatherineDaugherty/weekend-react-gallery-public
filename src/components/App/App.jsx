@@ -6,7 +6,7 @@ import GalleryList from '../GalleryList/GalleryList.jsx'
 function App() {
 
   useEffect(() => {
-    fetchList ()
+    fetchList()
   }, []) //ONREADY GET array at Mount
 
   let [galleryList, setGalleryList] = useState([{}]);
@@ -26,17 +26,13 @@ function App() {
   } //end FETCH(GET)List 
 
   console.log('this is GalleryList', GalleryList);
-
   return (
     <div className="App">
       <header className="App-header">
         <h1 className="App-title">Gallery of My Life</h1>
-      </header> 
-      
+      </header>
       <GalleryList galleryList={galleryList} />
 
-      <p>Gallery goes here</p>
-      <img className="resize" src="images/bike_path.jpg" />
     </div>
   );
 }

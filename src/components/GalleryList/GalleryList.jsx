@@ -1,11 +1,15 @@
+import GalleryItem from "../GalleryItem/GalleryItem";
+import './GalleryList.css'
+
 function GalleryList({ galleryList }) {
     console.log(galleryList);
 
-return( <>
-     {galleryList.map((image) => ( <img key={image.id} src={image.path} alt={image.description} width="100" height="100"></img>  ))}
-</>
-
+    return (
+        <>
+            <div className="listDiv">
+                {galleryList.map((image) => <GalleryItem image={image} />)}
+            </div>
+        </>
     )
-
 } //END function 
-                    export default GalleryList;
+export default GalleryList;
