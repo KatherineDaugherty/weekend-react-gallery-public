@@ -1,0 +1,13 @@
+.listDiv{
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    order: 3;
+padding-bottom: 15px;
+}
+
+.likeSpan{
+    padding-top: 15px;
+}
