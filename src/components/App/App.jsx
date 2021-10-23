@@ -25,13 +25,14 @@ function App() {
       })
   } //end FETCH(GET)List 
 
+
   console.log('this is GalleryList', GalleryList);
   return (
     <div className="App">
       <header className="App-header">
         <h1 className="App-title">Gallery of My Life</h1>
       </header>
-      <GalleryList galleryList={galleryList} />
+      <GalleryList galleryList={galleryList} fetchList={fetchList}/>
 
     </div>
   );

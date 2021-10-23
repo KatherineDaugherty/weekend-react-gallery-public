@@ -1,6 +1,24 @@
+import { useState } from 'react';
+import axios from 'axios';
 import './GalleryItem.css'
 
-function GalleryItem({ image }) {
+function GalleryItem({ image , fetchList}) {
+
+    const addLike = () => {
+        console.log(`in ADD `);
+        axios({
+          method:'PUT',
+          url: `/gallery/like/${image.id}`,
+        })
+        .then(response => {
+          console.log(`response is`, response);
+          fetchList();
+        })
+        .catch(error => {
+          console.log(`Error in Put`, error);
+        })
+      } //END PUT      
+
 
     return (
         <>
@@ -11,10 +29,10 @@ function GalleryItem({ image }) {
 
 
                     <span className="likeSpan">
-                        <button> LIKE </button>
+                        <button onClick={addLike}> LIKE </button>
                         <p>{image.likes} likes </p>
-                        {/* onClick={() => onLike(image.id)} */}
                     </span>
+
                 </div>
             </view>
 
