@@ -7,7 +7,7 @@ function GalleryItem({ image, fetchList }) {
 
   //Hooks in react are always use...
 
-  const [isToggle, setIsToggle] = useState(false);
+  const [isToggle, setIsToggle] = useState(true);
 
   //PUT in Item file because it's only used here.  no need to pass down
   const addLike = () => {
@@ -43,8 +43,13 @@ function GalleryItem({ image, fetchList }) {
         {/* TOGGLE.. if True and False  USE Ternary */}
 
         <div className="isToggle">
-          {isToggle ? <h2 className="description" onClick={toggleD} > {image.description} </h2> : <img className="image" onClick={toggleD} key={image.id} src={image.path} alt={image.description} width="200" height="250"></img>}
+
+
+        <img className={isToggle ? "image" : "image dim"} onClick={toggleD} key={image.id} src={image.path} alt={image.description} width="200" height="250"></img>
+        <h2 className={isToggle ? "description isInvisible" : "description" }onClick={toggleD} > {image.description} </h2>
+
         </div>
+
 
         <div className="likeDiv">
 
