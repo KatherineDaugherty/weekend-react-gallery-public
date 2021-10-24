@@ -5,7 +5,7 @@ import './GalleryItem.css'
 //pass in image and fetchList 
 function GalleryItem({ image, fetchList }) {
 
-//Hooks in react are always use...
+  //Hooks in react are always use...
 
   const [isToggle, setIsToggle] = useState(false);
 
@@ -30,30 +30,29 @@ function GalleryItem({ image, fetchList }) {
     console.log(`clicked toggle`);
     setIsToggle(!isToggle);
     //opposite of what currently is
-
   }
-console.log(image, isToggle);
-//TEST toggle - looks good 
 
+  console.log(image, isToggle);
+  //TEST toggle - looks good 
 
   //return galleryList array of objects. src image path and description 
   return (
     <>
-      <view className="imgWithText" style={{ flex: 1, flexDirection: 'column' }}>
+      <div>
 
-        <div className="listDiv">
+        {/* TOGGLE.. if True and False  USE Ternary */}
 
-          {/* TOGGLE.. if True and False  USE Ternary */}
-
-          {isToggle ? <h2 onClick={toggleD}> {image.description} </h2> : <img onClick={toggleD} key={image.id} src={image.path} alt={image.description} width="175" height="200"></img>}
-
-          <span className="likeSpan">
-            <button onClick={addLike}> LIKE </button>
-            <p>{image.likes} likes </p>
-          </span>
-
+        <div className="isToggle">
+          {isToggle ? <h2 className="description" onClick={toggleD} > {image.description} </h2> : <img className="image" onClick={toggleD} key={image.id} src={image.path} alt={image.description} width="200" height="250"></img>}
         </div>
-      </view>
+
+        <div className="likeDiv">
+
+          <button className="button" onClick={addLike}> Love &#128156; </button>
+          {image.likes === 0 ? <p> Be the first to Love this! </p> : <p> {image.likes} people love this </p>}
+        </div>
+
+      </div>
 
     </>
   )
