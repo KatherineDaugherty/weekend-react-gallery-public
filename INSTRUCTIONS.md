@@ -72,11 +72,10 @@ image.description
 
 
     - Display the number likes for each item and include a like button.
-    [ ]
-    - When the like button is clicked, use `Axios` to update (`PUT`) the like count `/gallery/like/:id`.
-
+    [x]
+    - When the like button is clicked, use `Axios` to update (`PUT`) the like count `/gallery/like/:id`. [x]
     - Update the gallery each time a like button is clicked.
-    [ ]
+    [x]
 
 
 ## STRETCH GOALS

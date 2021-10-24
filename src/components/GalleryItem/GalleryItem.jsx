@@ -2,8 +2,10 @@ import { useState } from 'react';
 import axios from 'axios';
 import './GalleryItem.css'
 
+//pass in image and fetchList 
 function GalleryItem({ image , fetchList}) {
 
+  //PUT in Item file because it's only used here.  no need to pass down
     const addLike = () => {
         console.log(`in ADD `);
         axios({
@@ -19,13 +21,22 @@ function GalleryItem({ image , fetchList}) {
         })
       } //END PUT      
 
+      //create function for onClick of Img
+      const toggleD = () => {
+        console.log(`clicked toggle`);
+        
+      }
 
+      //return galleryList array of objects. src image path and description 
     return (
         <>
             <view className="imgWithText" style={{ flex: 1, flexDirection: 'column' }}>
 
                 <div className="listDiv">
-                    <img onClick={image.onClick} key={image.id} src={image.path} alt={image.description} width="175" height="200"></img>
+                  
+                  {/* TOGGLE.. if True and False  */}
+              
+                    <img onClick={toggleD} key={image.id} src={image.path} alt={image.description} width="175" height="200"></img>
 
 
                     <span className="likeSpan">
@@ -39,4 +50,5 @@ function GalleryItem({ image , fetchList}) {
         </>
     )
 }
+//make this component available to others 
 export default GalleryItem;
