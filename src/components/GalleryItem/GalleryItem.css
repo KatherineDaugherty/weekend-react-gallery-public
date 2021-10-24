@@ -1,35 +1,41 @@
 .likeDiv{
-    padding-top: 15px;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
-.image{
+ .image{
     box-shadow: 
     rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-    margin: 0px 15px 5px 15px;
-}
+}  
 
 button{
-    background-color: rgb(243, 242, 247);
-text-align: center;
-border-radius: 12px;
-}
-.isToggle{
-    
+    background-color: rgb(254, 254, 254);
+    text-align: center;
+    border-radius: 12px;
 }
 
+.isToggle{
+position: relative;
+}
 
 .description{
-    box-shadow: 
-    rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px,
-    rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px,
-    rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    margin: 0px 15px 5px 15px;
+    position: absolute;
+    bottom: -30px;
+    left: 90px;
 
-      width: 200px;
-      height: 250px;
-      background-color: rgb(245, 241, 249);
+    width: 175px;
+    height: 250px;
 
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: medium;
+line-height: 1.5em;
+  }
+  
+.isInvisible{
+        opacity: 0;
+    }
+
+.dim{
+        opacity: .25;
     }
