@@ -4,11 +4,11 @@
     flex-flow: row wrap;
     justify-content: center;
     order: 3;
-    padding-bottom: 15px;
+    margin-bottom: 2em;
 
-    background-color: rgb(175, 175, 232);
-    margin-top: 2em;
+    margin-top: 3em;
 }
+
 .listDiv>* {
     flex: 0 0 33.3333%;
 }

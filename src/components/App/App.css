@@ -3,7 +3,7 @@
 }
 
 .App-header {
-  background-color: rgb(32, 128, 125);
+  background-color: #00b4d8;
   padding: 1em;
   color: white;
 }
@@ -13,5 +13,11 @@
 }
 
 body{
- background-color: rgb(175, 175, 232);
+ background-color: #caf0f8;
+}
+
+footer{
+  background-color: #0096c7;
+  padding-bottom: 15px;
+  padding-top: 15px;
 }

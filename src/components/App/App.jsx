@@ -32,8 +32,11 @@ function App() {
       <header className="App-header">
         <h1 className="App-title">Gallery of My Life</h1>
       </header>
-      <GalleryList galleryList={galleryList} fetchList={fetchList}/>
+      <GalleryList galleryList={galleryList} fetchList={fetchList} />
 
+      <footer>
+        <h6> Created by: Katherine Daugherty </h6>
+      </footer>
     </div>
   );
 }

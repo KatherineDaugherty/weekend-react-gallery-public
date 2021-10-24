@@ -2,12 +2,12 @@ const galleryItems = [
     // { id: 1, path: 'images/goat_small.jpg', description: 'Photo of a goat taken at Glacier National Park.', likes: 0 }
     { id: 1, 
         path: 'images/bikePath.jpeg', 
-        description: 'Photo of Cedar Lake Trail, Rails to Trails Bike Path in Minneapolis, MN.', 
+        description: 'Photo of Cedar Lake Trail, my favorite rails to trails Bike Path in Minneapolis, MN.', 
         likes: 0 },
 
     { id: 2, 
         path: 'images/melissaH.jpeg', 
-        description: 'Picture of my Life Partner of 5+ years Melissa Ho.', 
+        description: 'Picture of my partner, Melissa Ho being cute at the four corners near Loring Park, MN.', 
         likes: 0 },
 
     { id: 3, 
@@ -17,12 +17,12 @@ const galleryItems = [
 
     { id: 4, 
         path: 'images/PublicArt.jpg', 
-        description: 'Picture of Public Art Work: Iguana sculptures in Holland.', 
+        description: 'Picture of life-like Iguana statues in Holland.', 
         likes: 0 },
 
     { id: 5, 
         path: 'images/Travel.jpg', 
-        description: 'Picture of Me in Guangzhou China near the Canton Tower.', 
+        description: 'Picture of myself being a tourist in Guangzhou China near the Canton Tower.', 
         likes: 0 },
 
     { id: 6, 
