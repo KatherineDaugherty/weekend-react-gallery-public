@@ -19,8 +19,7 @@ Npm Express
 React
 Javascript
 
-List other prerequisites here
-Installation
+## Installation
 
 Start by npm install 
 'npm install express axios'
@@ -31,11 +30,11 @@ Open up your editor of choice and run an npm install
 Run npm run server in your terminal
 Run npm run client in your terminal
 The npm run client command will open up a new browser tab for you!
+
 ## Usage
 Users can look at images, click on images, read descriptions, click the like button and contribute to engagement.  
 
 ## Built With
-List technologies and frameworks here
 
 Javascript
 IDE- visual studio
