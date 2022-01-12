@@ -24,9 +24,9 @@ function App() {
         console.log(`ERROR on GET `, error);
       })
   } //end FETCH(GET)List 
-
-
   console.log('this is GalleryList', GalleryList);
+
+
   return (
     <div className="App">
       <header className="App-header">
